@@ -21,6 +21,7 @@
           
           const getWeatherDataFromApi = async () => {
             let apiKey = process.env.REACT_APP_API_KEY;
+            let apiID = process.env.REACT_APP_API_ID;
             let units = "metric";
             let lang = "tr";
             let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=${apiKey}&units=${units}&lang=${lang}`;
